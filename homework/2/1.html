@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+    <head>
+    <script type="text/javascript">  
+    
+    var questions=new Array;
+    var answers=new Array;
+    var rez=0;
+    answers=[1,1,0,0,0,1,0,0,1,1,0,0,0];
+    questions=['Октябрь - десятый месяц года. ',
+'Октябрь - в переводе означает "восьмой".',
+'На нашей планете пять материков.',
+'В году, как правило, 360 дней. ',
+'Женщину родом из Польши зовут полячкой.' ,
+'В году 11 месяцев, в которых есть 30 дней.' ,
+'Солнце - самая большая планета Солнечной системы. ',
+'Столица США - Нью-Йорк. ',
+'Лиственница - хвойное дерево. ',
+'Государственный язык Австралии - английский.',
+'Винни-Пух - русский медведь. ',
+'Волхвы - это славянское племя.', 
+'Слоны водятся в Южной Америке. '];
+for(var i=0; i<answers.length; i++){
+        if(confirm(questions[i])==answers[i])
+            rez++;
+    }
+alert("Правильных ответов: "+rez+" из "+questions.length);
+    	</script>
+    </head>
+    <body >
+     
+    </body>
+</html>

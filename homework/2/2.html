@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Проверка ФИО</title>
+    <head>
+    <script type="text/javascript">  
+    var fio,err,lie;
+    err="1234567890-_+=?/'@#!$%^*()";
+    do{
+        lie=0;
+        fio=prompt("Введите ФИО:");
+        for (var i = 0; i <fio.length; i++){
+            for(var j=0; j<err.length;j++)
+                if(fio[i]==err[j]) {
+                    alert("Не бывает таких фамилий :)")
+                    lie++;
+                    break;
+                }
+                if(lie) break;
+            }
+    }while(lie!=0);
+alert("Спасибо");
+    	</script>
+    </head>
+    <body >
+     
+    </body>
+</html>
