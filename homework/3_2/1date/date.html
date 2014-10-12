@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Текущая дата</title>
+</head>
+    <body >
+     <p id="clock"></p>
+     <script type="text/javascript">  
+    //Используя объект Date(), создайте "продвинутые" электронные часы, которые отображали бы не только текущее время, но и дату, день недели и т.п. Оформление продумайте на свой вкус. 
+    var days = new Array ("Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота");
+    var month = new Array ("Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря");
+       // updateClock (); // начальная установка часов при старте 
+        var t = setInterval ("updateClock()", 1000); // периодическое обновление 
+        
+        function format (n){
+            return n<10 ? "0"+n : n;
+        }
+        
+        function updateClock () {
+        var d = new Date ();
+        clock.innerHTML = ("<h3>"+format(d.getHours())+":"+format(d.getMinutes())+":"+format(d.getSeconds())+"<br>"+days[d.getDay()]+" "+d.getDate()+" "+month[d.getMonth()]+" "+d.getFullYear()+" года"+"</h3>")      }
+
+        </script>
+    </body>
+</html>
