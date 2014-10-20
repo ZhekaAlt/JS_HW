@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+    <script type="text/javascript">
+function checkMail(t) {
+    var r = /^[A-Za-z]\w{2,9}@([a-z]+\.)+[a-z]{2,3}$/; 
+
+    if (r.test(t))
+        alert ("e-mail коректный")
+    else
+        alert ("Некорректные данные!")
+}
+    </script>
+</head>
+<body>
+<form name="forma">
+    Введите e-mail: <input type="text" name="eMail" />
+    <input type="button" value="Проверка" onclick="checkMail(eMail.value)" />
+</form>
+<script>
+    checkMail(t);
+</script>
+</body>
+</html>

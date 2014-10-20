@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+    <script type="text/javascript">
+function testFIO(t) {
+    var r = /^[А-Я][а-я]{1,} ([А-Я]\.?){2}$/; 
+    if (r.test(t))
+        alert ("ФИО коректное");
+    else
+        alert ("Некорректные данные!");
+}
+    </script>
+</head>
+<body>
+<form name="forma">
+    Введите ФИО: <input type="text" name="fio" />
+    <input type="button" value="Проверка" onclick="testFIO(fio.value)" />
+    (Формат: Фамилия ИО/Фамилия И.О.)
+</form>
+<script>
+    testFIO(t);
+</script>
+</body>
+</html>
