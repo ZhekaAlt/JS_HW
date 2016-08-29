@@ -1,0 +1,6 @@
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+f:\mydocs\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
